@@ -4,36 +4,50 @@
 	<title>Elevator Pitch Generator</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<style type="text/css">
-	.brand {
+	body {
+		text-align: center;
+	}
+	header {
 		border-bottom: 1px dashed #ddd;
-		text-align: center;
 	}
-	.generator {
+	section {
 		color:#666;
+		margin-bottom: 4em;
 		text-align: center;
 	}
-	.generator h1 {
+	section h1 {
 		margin: 2em 0;
 	}
-	.generator span {
+	section span {
 		color:#222;
 		border-bottom: 1px dotted #666;
+	}
+	footer {
+		border-top: 1px dashed #ddd;
+		color:#999;
+		font-size:.9em;
+		padding-top: 2em;
 	}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="row brand">
+		<header class="row">
 			<div class="col-md-12 ">
 				<h3>Elevator Pitch Generator</h3>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 generator">
+		</header>
+		<section class="row">
+			<div class="col-md-12">
 				<h1>It&rsquo;s like <span id="site"></span> for <span id="group"></span>!</h1>
 				<button id="go" class="btn btn-large btn-primary">Generate</button>
 			</div>
-		</div>
+		</section>
+		<footer class="row">
+			<div class="col-md-12">
+				<p>Created by <a href="http://jcornelius.com">J Cornelius</a> for <a href="http://sugtw.com/">SUGTW</a>. Have something to add? <a href="https://github.com/jcornelius/elevator-pitch-generator/">Go for it</a>.</p>
+			</div>
+		</footer>
 	</div>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
