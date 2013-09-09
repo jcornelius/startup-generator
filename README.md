@@ -1,4 +1,4 @@
-elevator-pitch-generator
+Startup Generator
 ========================
 
-It's bullshit.
+It's bullshit. #sugtw
