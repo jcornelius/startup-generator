@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<title>Elevator Pitch Generator</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<style type="text/css">
+	.brand {
+		border-bottom: 1px dashed #ddd;
+		text-align: center;
+	}
+	.generator {
+		color:#666;
+		text-align: center;
+	}
+	.generator h1 {
+		margin: 2em 0;
+	}
+	.generator span {
+		color:#222;
+		border-bottom: 1px dotted #666;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row brand">
+			<div class="col-md-12 ">
+				<h3>Elevator Pitch Generator</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 generator">
+				<h1>It&rsquo;s like <span id="site"></span> for <span id="group"></span>!</h1>
+				<button id="go" class="btn btn-large btn-primary">Generate</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	<!--
+	var sites = ['Google', 'Facebook', 'YouTube', 'Wikipedia', 'LinkedIn', 'Twitter', 'Instagram', 'SnapChat', 'Amazon', 'WordPress', 'eBay', 'Tumblr', 'Pinterest', 'PayPal', 'Craigslist', 'IMDB', 'Stack Overflow', 'Flickr', 'CNN', 'TechCrunch', 'Mashable', 'Reddit', 'Digg', 'Mapquest', 'Netflix', 'Vimeo', 'New York Times', 'Dropbox', 'Evernote', 'Angry Birds', 'HootSuite', 'SlideShare', 'Yelp', 'Mailchimp', 'StumbleUpon', 'Weather Channel', 'Etsy', 'GitHub', 'E*Trade'];
+	var groups = ['cat lovers', 'dog lovers', 'homeschoolers', 'watch repairmen', 'popcorn enthusiasts', 'surfers', 'architects', 'lawyers', 'doctors', 'ice sculptors', 'truck drivers', 'submarine cooks', 'bounty hunters', 'human statues', 'sperm donors', 'crab fisherman', 'waterslide testers', 'elevator mechanics', 'Barbie dress designers', 'wig makers', 'cruise ship entertainers', 'lifeguards', 'phone psychics', 'chicken sexers', 'golfers', 'window washers', 'zookeepers', 'basketweavers', 'used car salesmen', 'Apple Store employees', 'crocodile wranglers', 'pet detectives', 'rodeo clowns', 'worm farmers', 'recruiters', 'developers', 'designers', 'accountants', 'rocket scientists', 'photographers', 'authors', 'movie stars', 'landscapers', 'guitar players', 'bartenders'];
+
+	$('#go').click(function(){
+		generate();
+	});
+	generate();
+
+	function generate() {
+		var siteNumber = Math.floor(Math.random()*sites.length);
+		var groupNumber = Math.floor(Math.random()*groups.length);
+		$('#site').html(sites[siteNumber]);
+		$('#group').html(groups[groupNumber]);
+	}
+	//-->
+	</script>
+</body>
+</html>
