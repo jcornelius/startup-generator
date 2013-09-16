@@ -94,7 +94,8 @@ $(document).ready(function(){
 								'landscapers',
 								'guitar players',
 								'bartenders',
-								'fishmongers'];
+								'fishmongers',
+								'bloggers'];
 
 	$('#go').click(function(){
 		generate();
