@@ -95,7 +95,14 @@ $(document).ready(function(){
 								'guitar players',
 								'bartenders',
 								'fishmongers',
-								'bloggers'];
+								'bloggers',
+								'gauchos',
+								'soccer fans',
+								'dancers',
+								'moms',
+								'dads',
+								'kids',
+								'students'];
 
 	$('#go').click(function(){
 		generate();
