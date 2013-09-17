@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 	var sites = [ 'Google',
 								'Facebook',
@@ -98,15 +98,9 @@ $(document).ready(function(){
 								'bloggers'];
 
 	$('#go').click(function(){
-		generate();
-	});
-	generate();
-
-	function generate() {
 		var siteNumber = Math.floor(Math.random()*sites.length);
 		var groupNumber = Math.floor(Math.random()*groups.length);
-		$('#site').html(sites[siteNumber]);
-		$('#group').html(groups[groupNumber]);
-	}
-
+		$('#site').text(sites[siteNumber]);
+		$('#group').text(groups[groupNumber]);
+	}).click();
 });
