@@ -95,7 +95,14 @@ $(function(){
 								'guitar players',
 								'bartenders',
 								'fishmongers',
-								'bloggers'];
+								'bloggers',
+								'gauchos',
+								'soccer fans',
+								'dancers',
+								'moms',
+								'dads',
+								'kids',
+								'students'];
 
 	$('#go').click(function(){
 		var siteNumber = Math.floor(Math.random()*sites.length);
