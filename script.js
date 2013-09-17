@@ -102,7 +102,9 @@ $(function(){
 								'moms',
 								'dads',
 								'kids',
-								'students'];
+								'students',
+								'ninjas',
+								'sushi lovers'];
 
 	$('#go').click(function(){
 		var siteNumber = Math.floor(Math.random()*sites.length);
